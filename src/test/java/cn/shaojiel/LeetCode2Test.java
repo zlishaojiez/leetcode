@@ -41,7 +41,7 @@ class LeetCode2Test {
                             new LeetCode2.ListNode(9,
                                     new LeetCode2.ListNode(9,
                                             new LeetCode2.ListNode(9))));
-                    
+
                     LeetCode2.ListNode expected = new LeetCode2.ListNode(8,
                             new LeetCode2.ListNode(9,
                                     new LeetCode2.ListNode(9,
