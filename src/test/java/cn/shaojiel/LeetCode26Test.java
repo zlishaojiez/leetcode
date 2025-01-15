@@ -9,20 +9,17 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.DynamicTest.dynamicTest;
 
-class LeetCode27Test {
-
+class LeetCode26Test {
     @TestFactory
     Collection<DynamicTest> test() {
         return List.of(
                 dynamicTest("Case 1", ()-> {
-                    int[] nums = new int[] {3, 2, 2, 3};
-                    int val = 3;
-                    assertThat(LeetCode27.removeElement(nums, val)).isEqualTo(2);
+                    int[] nums = new int[] {1, 1, 2};
+                    assertThat(LeetCode26.removeDuplicates(nums)).isEqualTo(2);
                 }),
                 dynamicTest("Case 2", ()-> {
-                    int[] nums = new int[] {0, 1, 2, 2, 3, 0, 4, 2};
-                    int val = 2;
-                    assertThat(LeetCode27.removeElement(nums, val)).isEqualTo(5);
+                    int[] nums = new int[] {0, 0, 1, 1, 1, 2, 2, 3, 3, 4};
+                    assertThat(LeetCode26.removeDuplicates(nums)).isEqualTo(5);
                 })
         );
     }
